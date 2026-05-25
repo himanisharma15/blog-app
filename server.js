@@ -18,9 +18,8 @@ app.use(cors());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Scalable Blog App API");
+  res.send("Backend is running successfully");
 });
-
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
 

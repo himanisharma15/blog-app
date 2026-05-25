@@ -17,6 +17,10 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan("dev"));
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Scalable Blog App API");
+});
+
 // Routes
 app.use("/api/auth", require("./routes/authRoutes"));
 
